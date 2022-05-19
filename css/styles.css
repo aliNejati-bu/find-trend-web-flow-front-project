@@ -1,0 +1,30 @@
+@import "fonts/fonts.css";
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #A8FF35;
+    --color-primary-darker: #87D322;
+    --color-primary-hover: #8CC83A;
+    --color-black: #000000;
+    --color-black02: #2B2B2B;
+    --color-gary01: #8B8B8B;
+    --color-gary02: #ADADAD;
+    --color-gary03: #F5F5F5;
+    --color-gary04: #F1F1F1;
+    --color-full-white: #FFFFFF;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* Typography */
+body{
+    font-family: 'Effra';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.4rem;
+}

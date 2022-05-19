@@ -1,0 +1,9 @@
+@import "effra/stylesheet.css";
+@font-face {font-family: "GoodDog";
+    src: url("gooddognew/ca32b369590c4b105ed8cbdf1f8da722.eot"); /* IE9*/
+    src: url("gooddognew/ca32b369590c4b105ed8cbdf1f8da722.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("gooddognew/ca32b369590c4b105ed8cbdf1f8da722.woff2") format("woff2"), /* chrome、firefox */
+    url("gooddognew/ca32b369590c4b105ed8cbdf1f8da722.woff") format("woff"), /* chrome、firefox */
+    url("gooddognew/ca32b369590c4b105ed8cbdf1f8da722.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("gooddognew/ca32b369590c4b105ed8cbdf1f8da722.svg#GoodDog New W00 Regular") format("svg"); /* iOS 4.1- */
+}
