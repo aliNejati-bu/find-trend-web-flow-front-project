@@ -1,8 +1,15 @@
 @import "fonts/fonts.css";
 
 *, *::after, *::before {
+    box-sizing: border-box;
+}
+
+*{
     margin: 0;
     padding: 0;
+}
+a {
+    text-decoration: none;
 }
 
 :root {
@@ -72,7 +79,7 @@ h4 {
         font-size: 1.8rem;
     }
 
-    h1,h2 {
+    h1, h2 {
         font-size: 7.2rem;
     }
 
@@ -88,5 +95,47 @@ h4 {
     h4 {
         font-size: 3.6rem;
         font-weight: 500;
+    }
+}
+
+
+/* Button */
+
+.btn {
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-black);
+}
+
+.btn-primary:hover{
+    background: var(--color-primary-hover);
+}
+
+.btn-black{
+    color: var(--color-full-white);
+    background: var(--color-black);
+}
+
+.btn-black:hover{
+    background: var(--color-black02);
+}
+
+.btn-block{
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        padding: 1.6rem 3.2rem;
     }
 }
