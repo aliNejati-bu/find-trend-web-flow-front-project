@@ -1,4 +1,5 @@
 @import "fonts/fonts.css";
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
@@ -17,14 +18,75 @@
     --color-full-white: #FFFFFF;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
 /* Typography */
-body{
+body {
     font-family: 'Effra';
     font-weight: normal;
     font-style: normal;
     font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+    font-size: 3.6rem;
+}
+
+h1, h2 {
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+
+h4 {
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.heading-white {
+    color: var(--color-full-white);
+}
+
+.heading-black {
+    color: var(--color-black);
+}
+
+
+.heading-gary02 {
+    color: var(--color-gary02);
+}
+
+.heading-primary-darker {
+    color: var(--color-primary-darker);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        font-size: 1.8rem;
+    }
+
+    h1,h2 {
+        font-size: 7.2rem;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 6.4rem;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 3.6rem;
+        font-weight: 500;
+    }
 }
