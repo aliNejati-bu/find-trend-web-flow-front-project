@@ -233,6 +233,10 @@ h4 {
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .tabs > :nth-child(odd) {
@@ -268,7 +272,7 @@ h4 {
     }
 
     .tabs>img{
-        width: 25vw;
+        width: 25%;
     }
 
     .tabs__img1 {
@@ -278,24 +282,24 @@ h4 {
 
     .tabs__img2 {
         margin-top: 0;
-        margin-left: -160px;
+        margin-left: -13rem;
         z-index: 3;
     }
 
     .tabs__img3 {
         margin-top: 0;
-        margin-left: -110px;
+        margin-left: -9rem;
         z-index: 2;
     }
 
     .tabs__img4 {
         margin-top: 0;
-        margin-left: -100px;
+        margin-left: -8rem;
         z-index: 1;
     }
 
     .tabs > :nth-child(even) {
-        top: 60px;
+        top: 55px;
         position: relative;
     }
 }
