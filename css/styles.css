@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -115,20 +116,20 @@ h4 {
     color: var(--color-black);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background: var(--color-primary-hover);
 }
 
-.btn-black{
+.btn-black {
     color: var(--color-full-white);
     background: var(--color-black);
 }
 
-.btn-black:hover{
+.btn-black:hover {
     background: var(--color-black02);
 }
 
-.btn-block{
+.btn-block {
     width: 100%;
     text-align: center;
 }
@@ -137,5 +138,90 @@ h4 {
 @media screen and (min-width: 1024px) {
     .btn {
         padding: 1.6rem 3.2rem;
+    }
+}
+
+
+/* arrow */
+.arrow {
+    font-family: GoodDog;
+    display: inline-flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(6deg);
+}
+
+.arrow-no-rotate{
+    transform: rotate(0);
+}
+
+.arrow__image {
+    flex: 1;
+}
+
+.arrow__text {
+    flex: 1;
+    text-align: center;
+}
+
+.arrow-up .arrow__image {
+    order: -1;
+}
+
+.arrow-up.arrow-left .arrow__image img {
+    transform: rotate(270deg) rotateX(180deg);
+    margin-right: 50%;
+}
+
+.arrow-up.arrow-left .arrow__image {
+    padding-right: 50%;
+}
+
+.arrow-left .arrow__image img {
+    transform: rotateY(180deg);
+}
+
+.arrow-left .arrow__image {
+    padding-right: 50%;
+    padding-top: 0.6rem;
+}
+
+.arrow-up.arrow-right .arrow__image img {
+    transform: rotate(270deg);
+}
+
+.arrow-up.arrow-right .arrow__image {
+    padding-left: 50%;
+}
+
+.arrow-up.arrow-right .arrow__text{
+    margin-top: -0.8rem;
+}
+
+.arrow-withe {
+    color: var(--color-full-white);
+}
+
+@media screen and (min-width: 768px){
+    .arrow{
+        font-size: 1.4rem;
+    }
+
+    .arrow-left .arrow__image img {
+        transform: rotate(90deg);
+    }
+
+    .arrow-left .arrow__image {
+        padding-right: 50%;
+        padding-top: 0.2rem;
+    }
+
+    .arrow-up.arrow-right .arrow__image {
+        padding-left: 40%;
+    }
+    .arrow-up.arrow-right .arrow__text{
+        margin-top: 0;
     }
 }
