@@ -303,3 +303,41 @@ h4 {
         position: relative;
     }
 }
+
+/* companies */
+.companies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.companies__container{
+    background: var(--color-gary03);
+    height: 7.4rem;
+    /*width: 16.2rem;*/
+    padding: 2.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.companies__container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .companies{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3.2rem;
+    }
+
+    .companies__container{
+        height: 12rem;
+        padding: 4rem 3.8rem;
+    }
+}
