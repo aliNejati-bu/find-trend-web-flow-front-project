@@ -372,6 +372,7 @@ h4 {
 @media screen and (min-width: 1024px){
     .trend_media{
         gap: 2.4rem;
+        justify-content: center;
     }
 
     .trend_media__item{
