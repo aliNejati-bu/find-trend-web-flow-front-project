@@ -361,23 +361,136 @@ h4 {
     padding: 1.7rem;
 }
 
-.trend_media__item img{
+.trend_media__item img {
     width: 100%;
 }
 
-.trend_media__item_active{
+.trend_media__item_active {
     background: var(--color-primary);
 }
 
-@media screen and (min-width: 1024px){
-    .trend_media{
+@media screen and (min-width: 1024px) {
+    .trend_media {
         gap: 2.4rem;
         justify-content: center;
     }
 
-    .trend_media__item{
+    .trend_media__item {
         width: 12.4rem !important;
         height: 12.4rem;
         padding: 3.2rem;
     }
+}
+
+
+/* Yearly Monthly  switch */
+
+.switch-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-full-white);
+    font-size: 1.8rem;
+    position: relative;
+}
+
+#switch_input01 {
+    display: none;
+}
+
+.switch-box__label {
+    background: var(--color-full-white);
+    display: inline-block;
+    width: 10.4rem;
+    height: 4.4rem;
+    border-radius: 99px;
+    position: relative;
+    transition: 0.4s;
+    margin: 0 2.8rem;
+    flex-shrink: 0;
+}
+
+.switch-box__yearly span {
+    color: var(--color-gary03);
+    opacity: 0.5;
+    transition: 0.4s;
+    position: relative;
+}
+
+.switch-box__monthly span {
+    color: var(--color-full-white);
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.switch-box__label:before {
+    background: var(--color-primary);
+    width: 2.8rem;
+    height: 2.8rem;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0.8rem;
+    content: "";
+    border-radius: 99px;
+    transition: 0.4s;
+}
+
+#switch_input01:checked ~ .switch-box__label:before {
+    left: 7rem;
+}
+
+#switch_input01:checked ~ .switch-box__yearly span {
+    color: var(--color-full-white);
+    opacity: 1;
+}
+
+#switch_input01:checked ~ .switch-box__monthly span {
+    color: var(--color-gary03);
+    opacity: 0.5;
+}
+
+.switch-box__arrow_mobile {
+    position: absolute;
+    bottom: -7rem;
+    right: -7rem;
+}
+
+.switch-box__arrow_desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .switch-box {
+        font-size: 2.4rem;
+    }
+
+    .switch-box__label {
+        height: 5.2rem;
+    }
+
+    .switch-box__label:before {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    #switch_input01:checked ~ .switch-box__label:before {
+        left: 6rem;
+    }
+
+    .switch-box__arrow_mobile {
+        display: none;
+    }
+
+    .switch-box__yearly{
+        position: relative;
+    }
+
+    .switch-box__arrow_desktop{
+        display: inline-block;
+        position: absolute;
+        right: -9rem;
+        bottom: -2rem;
+    }
+
 }
