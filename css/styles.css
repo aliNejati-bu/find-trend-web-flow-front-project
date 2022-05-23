@@ -561,3 +561,36 @@ h4 {
 .plan--popular {
     background: var(--color-primary);
 }
+
+/* collapsible */
+
+.collapsible {
+
+}
+
+.collapsible_content {
+    text-align: center;
+    max-height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.collapsible__icon {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 5rem;
+    vertical-align: center;
+    text-align: center;
+    padding: 0.8rem 0.8rem 0;
+    border-radius: 4px;
+}
+
+.collapsible_item {
+    margin: 2.5rem;
+}
+
+
+.expanded .collapsible_content {
+    max-height: 100vh;
+}
