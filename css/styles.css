@@ -134,6 +134,11 @@ h4 {
     text-align: center;
 }
 
+.btn-white {
+    background: var(--color-full-white);
+    color: var(--color-black) !important;
+}
+
 
 @media screen and (min-width: 1024px) {
     .btn {
@@ -592,5 +597,127 @@ h4 {
 
 
 .expanded .collapsible_content {
+    max-height: 100vh !important;
+    opacity: 1 !important;
+}
+
+/* Nav */
+
+.nav {
+    padding: 2rem 5rem;
+}
+
+
+.nav .collapsible i {
+    color: var(--color-full-white);
+}
+
+.nav__img_desktop {
+    width: 17rem;
+    height: 4.1rem;
+}
+
+.nav .collapsible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav .collapsible .collapsible_content {
+    opacity: 1;
     max-height: 100vh;
+}
+
+.nav .collapsible .collapsible_content .nav_list_center {
+    display: flex;
+    color: var(--color-full-white);
+    list-style: none;
+}
+
+.nav__center_list_item {
+    margin: 0 1.5rem;
+}
+
+.nav .collapsible .collapsible_content .nav_list_center a {
+    color: var(--color-full-white);
+    font-size: 1.8rem;
+}
+
+.nav__auth_list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+a.nav__none_btn {
+    color: var(--color-full-white);
+}
+
+.nav__auth_list li {
+    margin-left: 2rem;
+}
+
+.nav .btn {
+    font-weight: 400;
+    padding: 1.2rem 3.2rem;
+}
+
+.nav__img_mobile {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.nav__login_mobile,
+.nav__register_mobile,
+.nav__btn{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .nav {
+        padding: 2rem 2rem;
+    }
+
+    .nav .collapsible .collapsible_content {
+        opacity: 0;
+        max-height: 0;
+    }
+
+    .nav__auth {
+        display: none;
+    }
+
+    .nav__img_mobile {
+        display: block;
+    }
+
+    .nav__img_desktop {
+        display: none;
+    }
+
+    .nav .collapsible_content {
+        width: 100vw;
+        margin-top: 5rem;
+    }
+
+    .nav .collapsible .collapsible_content .nav_list_center {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-black);
+    }
+
+    .nav__center_list_item {
+        margin-bottom: 2rem;
+    }
+
+    .nav__login_mobile{
+        margin-top: 2rem;
+    }
+
+
+
 }
