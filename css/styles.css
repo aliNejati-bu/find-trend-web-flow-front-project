@@ -482,15 +482,82 @@ h4 {
         display: none;
     }
 
-    .switch-box__yearly{
+    .switch-box__yearly {
         position: relative;
     }
 
-    .switch-box__arrow_desktop{
+    .switch-box__arrow_desktop {
         display: inline-block;
         position: absolute;
         right: -9rem;
         bottom: -2rem;
     }
 
+}
+
+
+/* Plans */
+
+.plan {
+    background: var(--color-full-white);
+    border-radius: 15px;
+    padding: 2rem 2.7rem;
+    min-height: 60.2rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan__heading {
+    margin-bottom: 1rem;
+}
+
+
+.plan__header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.plan .btn {
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.plan__description {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.plan__price {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.plan__period {
+    font-size: 1.8rem;
+}
+
+
+.plan__list li {
+    list-style: url("../images/list-tick.png");
+    margin: 2rem 2rem;
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .plan__heading {
+        font-weight: 400;
+    }
+
+    .plan__price {
+        font-size: 6.4rem;
+    }
+}
+
+.plan--popular {
+    background: var(--color-primary);
 }
