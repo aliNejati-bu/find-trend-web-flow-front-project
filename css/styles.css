@@ -244,6 +244,10 @@ h4 {
     justify-content: center;
 }
 
+.tabs > img {
+    width: 100%;
+}
+
 .tabs > :nth-child(odd) {
     transform: rotate(357deg);
 }
@@ -672,11 +676,17 @@ a.nav__none_btn {
 
 .nav__login_mobile,
 .nav__register_mobile,
-.nav__btn{
+.nav__btn {
     display: none;
 }
 
 @media screen and (max-width: 1024px) {
+
+    .nav__login_mobile,
+    .nav__register_mobile,
+    .nav__btn {
+        display: block;
+    }
 
     .nav {
         padding: 2rem 2rem;
@@ -714,10 +724,79 @@ a.nav__none_btn {
         margin-bottom: 2rem;
     }
 
-    .nav__login_mobile{
+    .nav__login_mobile {
         margin-top: 2rem;
     }
 
+}
 
+/* hero */
 
+.hero {
+    background: black url("../images/Bg-hero/Ornament.svg");
+    color: var(--color-full-white);
+    padding-bottom: 3.5rem;
+}
+
+.hero__content {
+    text-align: center;
+    max-width: 31.8rem;
+    margin: 1rem auto 0;
+}
+
+.hero__text {
+    color: var(--color-gary01);
+    max-width: 28.6rem;
+    text-align: center;
+    margin: 2rem auto 0;
+    line-height: 3rem;
+}
+
+.hero__btn {
+    margin-top: 5rem;
+}
+
+.hero .tabs {
+    max-width: 30.6rem;
+    margin-top: 5rem;
+}
+
+.hero .arrow {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        background: black url("../images/Bg-hero/Ornament-1.svg") center;
+        background-size: cover;
+        min-height: 100vh;
+        padding-bottom: 11rem;
+    }
+
+    .hero__content {
+        margin-top: 9rem;
+        max-width: 70rem;
+    }
+
+    .hero__text {
+        max-width: 70rem;
+    }
+
+    .hero__btn {
+        margin-top: 4rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hero .arrow {
+        display: block;
+        position: absolute;
+        right: -57%;
+        bottom: -6%;
+    }
+
+    .hero .tabs {
+        margin-top: 9rem;
+        max-width: 100%;
+    }
 }
