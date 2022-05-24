@@ -209,7 +209,7 @@ h4 {
     color: var(--color-full-white);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .arrow {
         font-size: 1.4rem;
     }
@@ -770,7 +770,7 @@ a.nav__none_btn {
         background: black url("../images/Bg-hero/Ornament-1.svg") center;
         background-size: cover;
         min-height: 100vh;
-        padding-bottom: 11rem;
+        padding-bottom: 13rem;
     }
 
     .hero__content {
@@ -798,5 +798,79 @@ a.nav__none_btn {
     .hero .tabs {
         margin-top: 9rem;
         max-width: 100%;
+    }
+}
+
+
+/* solutions section */
+
+.section-solutions {
+    background: var(--color-primary);
+    text-align: center;
+    padding: 8rem 0 5rem 0;
+}
+
+.solutions__heading {
+    font-weight: bold;
+}
+
+.solutions__tap {
+    background: var(--color-full-white);
+    max-width: 33.9rem;
+    position: relative;
+    border-radius: 14px;
+    padding: 2.5rem;
+    margin: 10rem auto 0;
+}
+
+.solutions__tab_image {
+    width: 100%;
+}
+
+.solutions__tap .arrow {
+    position: absolute;
+}
+
+.solutions__arrow-01-mobile {
+    top: -47%;
+    right: 9%;
+}
+
+.solutions__arrow-02-mobile {
+    bottom: -33%;
+    left: -2%;
+}
+
+
+.solutions__text {
+    margin: 8rem auto 0;
+    max-width: 28.6rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .section-solutions {
+        padding: 12rem 0 13rem 0;
+    }
+
+    .solutions__arrow-01-mobile {
+        top: 23%;
+        right: -24%;
+    }
+
+    .solutions__arrow-02-mobile {
+        left: -22%;
+        bottom: 29%;
+    }
+    .solutions__tap {
+        max-width: 50.2rem;
+        padding: 6rem 7.5rem;
+        border-radius: 16px;
+        margin: 7rem auto 0;
+    }
+
+    .solutions__text{
+        max-width: 66.6rem;
+        margin: 6rem auto 0;
     }
 }
