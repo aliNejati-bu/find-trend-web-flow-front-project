@@ -915,3 +915,27 @@ a.nav__none_btn {
         font-size: 6.4rem;
     }
 }
+
+
+/* companies section */
+
+
+.section-companies {
+    padding: 8rem 0;
+}
+
+.companies__heading {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 1026px) {
+    .section-companies {
+        padding: 20rem 0;
+    }
+    .companies__heading {
+        font-size: 6.4rem;
+        font-weight: bold;
+        margin-bottom: 7.9rem;
+    }
+}
