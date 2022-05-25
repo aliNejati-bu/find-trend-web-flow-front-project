@@ -845,6 +845,7 @@ a.nav__none_btn {
 .solutions__text {
     margin: 8rem auto 0;
     max-width: 28.6rem;
+    line-height: 150%;
 }
 
 
@@ -862,6 +863,7 @@ a.nav__none_btn {
         left: -22%;
         bottom: 29%;
     }
+
     .solutions__tap {
         max-width: 50.2rem;
         padding: 6rem 7.5rem;
@@ -869,8 +871,35 @@ a.nav__none_btn {
         margin: 7rem auto 0;
     }
 
-    .solutions__text{
+    .solutions__text {
         max-width: 66.6rem;
         margin: 6rem auto 0;
+    }
+}
+
+
+/* about section */
+
+.section-text-about {
+    padding: 8rem 0;
+}
+
+.about__heading {
+    max-width: 33.5rem;
+    margin: 0 auto;
+}
+
+.about__gray {
+    color: var(--color-gary02);
+}
+
+@media screen and (min-width: 1024px) {
+    .section-text-about{
+        padding: 8rem 3rem;
+    }
+    .about__heading {
+        max-width: 116rem;
+        font-size: 6.4rem;
+        font-weight: bold;
     }
 }
