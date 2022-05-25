@@ -30,6 +30,20 @@ html {
     font-size: 62.5%;
 }
 
+
+.container {
+    max-width: 33.5rem;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 116rem;
+        font-weight: bold;
+    }
+}
+
 /* Typography */
 body {
     font-family: 'Effra';
@@ -885,8 +899,7 @@ a.nav__none_btn {
 }
 
 .about__heading {
-    max-width: 33.5rem;
-    margin: 0 auto;
+
 }
 
 .about__gray {
@@ -894,12 +907,11 @@ a.nav__none_btn {
 }
 
 @media screen and (min-width: 1024px) {
-    .section-text-about{
+    .section-text-about {
         padding: 8rem 3rem;
     }
+
     .about__heading {
-        max-width: 116rem;
         font-size: 6.4rem;
-        font-weight: bold;
     }
 }
