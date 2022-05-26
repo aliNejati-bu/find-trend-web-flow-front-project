@@ -1039,3 +1039,29 @@ a.nav__none_btn {
         gap: 4rem;
     }
 }
+
+
+/* call out section */
+
+.section-call_out{
+    padding: 8rem 0;
+    background: var(--color-primary);
+    text-align: center;
+}
+
+.call_out__second_heading{
+    color: var(--color-primary-darker);
+}
+.section-call_out .btn{
+    margin-top: 3.2rem;
+}
+
+@media screen and (min-width: 1024px){
+    .section-call_out h2{
+        font-weight: 900;
+    }
+
+    .section-call_out{
+        padding: 14rem 0 19.4rem;
+    }
+}
