@@ -8,6 +8,7 @@
     <title>find Trends Webflow</title>
     <link rel="stylesheet" href="css/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -69,17 +70,17 @@
     </div>
 </section>
 <section class="section-solutions">
-    <h2 class="solutions__heading">
+    <h2 class="solutions__heading" data-aos="fade-up">
         Open new tabs is sh*t
     </h2>
-    <div class="solutions__tap">
+    <div class="solutions__tap" data-aos="fade-up">
         <div class="arrow arrow-left solutions__arrow-01-mobile">
             <div class="arrow__text">you just need one<br> tab now.</div>
             <div class="arrow__image">
                 <img src="images/arrow%20black.svg" alt="">
             </div>
         </div>
-        <img src="images/tab5.png" class="solutions__tab_image" alt="">
+        <img src="images/tab5.png" class="solutions__tab_image" alt="" data-aos="fade-right">
         <div class="arrow arrow-up arrow-right solutions__arrow-02-mobile">
             <div class="arrow__text">solution for <br> discover a trend</div>
             <div class="arrow__image">
@@ -89,14 +90,15 @@
 
     </div>
 
-    <p class="solutions__text">
+    <p class="solutions__text" data-aos="fade-down">
         A solution for your browser tabs and don’t make your device get slower over time. Get ease and faster to
         discover a trend with just one tab.
     </p>
 </section>
 
 <section class="section-text-about">
-    <div class="container">
+    <div class="container" data-aos="fade-up"
+         data-aos-anchor-placement="bottom-bottom">
         <h2 class="about__heading">
             Findtrend helps you to increase your
         </h2>
@@ -112,8 +114,8 @@
     </div>
 </section>
 
-<section class="section-companies">
-    <div class="container">
+<section class="section-companies" data-aos="fade-up">
+    <div class="container" >
         <h2 class="companies__heading">
             Findtrend make +1000 Startup grow
         </h2>
@@ -171,7 +173,7 @@
 </section>
 
 <section class="section-trend">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h2 class="trend__heading">
             All platform connect to Findtrend
         </h2>
@@ -202,9 +204,9 @@
             </div>
         </div>
         <div class="trend__images_wrapper">
-            <img src="images/tweet%201.png" class="trend__tweet" alt="">
-            <img src="images/tweet%202.png" class="trend__tweet" alt="">
-            <img src="images/tweet%203.png" class="trend__tweet" alt="">
+            <img src="images/tweet%201.png" class="trend__tweet" alt="" data-aos="fade-right">
+            <img src="images/tweet%202.png" class="trend__tweet" alt="" data-aos="fade-left">
+            <img src="images/tweet%203.png" class="trend__tweet" alt="" data-aos="fade-right">
         </div>
         <a href="#" class="btn btn-black">View More Trend</a>
 
@@ -240,7 +242,7 @@
             </div>
         </div>
 
-        <div class="plans__grid">
+        <div class="plans__grid" data-aos="fade-up">
             <div class="plan">
                 <header class="plan__header">
                     <h4 class="plan__heading">Personal</h4>
@@ -325,7 +327,10 @@
 </footer>
 
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
