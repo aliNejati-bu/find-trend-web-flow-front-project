@@ -370,7 +370,7 @@ h4 {
 
 .trend_media {
     display: flex;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     gap: 1.6rem;
 }
@@ -865,7 +865,7 @@ a.nav__none_btn {
 
 @media screen and (min-width: 1024px) {
     .section-solutions {
-        padding: 12rem 0 13rem 0;
+        padding: 12rem 3rem 13rem 3rem;
     }
 
     .solutions__arrow-01-mobile {
@@ -931,11 +931,66 @@ a.nav__none_btn {
 
 @media screen and (min-width: 1026px) {
     .section-companies {
-        padding: 20rem 0;
+        padding: 20rem 3rem;
     }
+
     .companies__heading {
         font-size: 6.4rem;
         font-weight: bold;
         margin-bottom: 7.9rem;
+    }
+}
+
+/* trend section */
+
+.section-trend {
+    background: #FAFAFA;
+    text-align: center;
+    padding: 8.8rem 0;
+    overflow: hidden;
+}
+
+.trend__images_wrapper img {
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.trend__tweet {
+    margin-top: 3.2rem;
+}
+
+.trend__heading {
+    margin-bottom: 2.6rem;
+}
+
+.trend__images_wrapper {
+    margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .section-trend .trend_media{
+        justify-content: flex-start;
+    }
+    .section-trend {
+        padding: 8.8rem 0 14rem;
+    }
+    .trend__heading{
+        margin-bottom: 8rem;
+        font-size: 6.4rem;
+        font-weight: bold;
+    }
+
+
+    .trend__images_wrapper{
+        margin: 3.7rem auto 0;
+        max-width: 80rem;
+    }
+
+    .trend__tweet {
+        margin-top:4.3rem;
+    }
+
+    .section-trend .btn{
+        margin-top: 8rem;
     }
 }
