@@ -1018,3 +1018,24 @@ a.nav__none_btn {
 .section-plans .plan{
     margin-bottom: 2.4rem;
 }
+
+@media screen and (min-width: 1024px){
+    .section-plans{
+        padding: 14rem 0 9rem;
+    }
+    .plans__heading{
+        font-size: 6.4rem;
+        font-weight: bold;
+    }
+
+    .section-plans .switch-box{
+        margin-top: 4.1rem;
+        margin-bottom: 4.1rem;
+    }
+
+    .plans__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+    }
+}
