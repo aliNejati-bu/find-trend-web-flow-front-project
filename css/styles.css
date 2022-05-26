@@ -994,3 +994,27 @@ a.nav__none_btn {
         margin-top: 8rem;
     }
 }
+
+
+
+/* plans section */
+
+.section-plans{
+    background: var(--color-black);
+    padding: 8rem 0;
+}
+
+
+.plans__heading{
+    color: var(--color-full-white);
+    text-align: center;
+}
+
+.section-plans .switch-box{
+    margin-top: 3.2rem;
+    margin-bottom: 8rem;
+}
+
+.section-plans .plan{
+    margin-bottom: 2.4rem;
+}
